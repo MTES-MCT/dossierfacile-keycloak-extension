@@ -14,12 +14,10 @@ public class DossierFacileEventListenerProviderFactory implements EventListenerP
 
     @Override
     public void init(Config.Scope scope) {
-
     }
 
     @Override
     public void postInit(KeycloakSessionFactory keycloakSessionFactory) {
-
     }
 
     @Override
