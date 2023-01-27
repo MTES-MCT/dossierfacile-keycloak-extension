@@ -36,8 +36,8 @@ public class DossierFacileEventListenerProvider implements EventListenerProvider
 
         if (EventType.REGISTER.equals(event.getType())) {
             try {
-                log.infof("API_TENANT_API_KEY=", System.getenv(API_TENANT_API_KEY));
-                log.infof("API_TENANT_KC_EVENT_URL=", System.getenv(API_TENANT_KC_EVENT_URL));
+                log.infof("API_TENANT_API_KEY= %s", System.getenv(API_TENANT_API_KEY));
+                log.infof("API_TENANT_KC_EVENT_URL= %s", System.getenv(API_TENANT_KC_EVENT_URL));
 
                 HttpClient httpClient = session.getProvider(HttpClientProvider.class).getHttpClient();
                 HttpPost post = new HttpPost(System.getenv(API_TENANT_KC_EVENT_URL));
